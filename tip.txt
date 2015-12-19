@@ -1,0 +1,8 @@
+motelist
+make telosb install£¬n
+
+make clean
+
+java net.tinyos.tools.MsgReader BlinkToRadioMsg -comm serial@/dev/ttyUSB0:telosb
+
+java net.tinyos.tools.Listen -comm serial@/dev/ttyUSB0:telosb
